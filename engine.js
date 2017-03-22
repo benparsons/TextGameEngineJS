@@ -19,7 +19,7 @@ function renderPart(part) {
 
 function appendHistory(storyText, responseText) {
   var storyDiv = $("<span>").text(storyText);
-  var responseDiv = $("<span>").text(responseText);
+  var responseDiv = $("<span class='response_text'>").text(responseText);
   $("#history").append(storyDiv);
   $("#history").append($("<br>"));
   $("#history").append(responseDiv);
